@@ -10,9 +10,10 @@ const items = [
     "price": 200,
     "date": "2018-09-10",
     "category": {
-    "id": 1,
-    "name": "旅行",
-      "type": "outcome"
+      "id": 1,
+      "name": "旅行",
+      "type": "outcome",
+      "iconName": "ios-plane"
     }
   },
   {
@@ -23,7 +24,8 @@ const items = [
     "category": {
     "id": 1,
     "name": "旅行",
-      "type": "outcome"
+      "type": "outcome",
+      "iconName": "ios-plane"
     }
   }
 
