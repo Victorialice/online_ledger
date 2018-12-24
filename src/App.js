@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PriceList from './components/PriceList';
+import ViewTab from './components/ViewTab';
+import {LIST_VIEW, CHART_VIEW} from './utility'
 const items = [
   {
     "id": 1,
@@ -39,6 +41,9 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
+        <ViewTab activeTab={LIST_VIEW}
+          onTabChange={(view) => {console.log(view)}}
+        />
         <PriceList
           items={items}
           onModifyItem={(item) => {alert(item.id)}}
