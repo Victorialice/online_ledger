@@ -4,7 +4,10 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PriceList from './components/PriceList';
 import ViewTab from './components/ViewTab';
+import TotalPrice from './components/TotalPrice'
 import {LIST_VIEW, CHART_VIEW} from './utility'
+const totalIncome = 100
+const totalOutcome = 100
 const items = [
   {
     "id": 1,
@@ -41,6 +44,10 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
+        <TotalPrice
+          income={totalIncome}
+          outcome={totalOutcome}
+        />
         <ViewTab activeTab={LIST_VIEW}
           onTabChange={(view) => {console.log(view)}}
         />
