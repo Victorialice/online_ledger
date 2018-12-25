@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import PriceList from './components/PriceList';
 import ViewTab from './components/ViewTab';
 import TotalPrice from './components/TotalPrice'
+import MonthPicker from './components/MonthPicker'
 import {LIST_VIEW, CHART_VIEW} from './utility'
 const totalIncome = 100
 const totalOutcome = 100
@@ -44,6 +45,10 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
+        <MonthPicker
+          year={2018}
+          month={5}
+        />
         <TotalPrice
           income={totalIncome}
           outcome={totalOutcome}
