@@ -48,6 +48,7 @@ class App extends Component {
         <MonthPicker
           year={2018}
           month={5}
+          onChange={(year, month) => {console.log(year,month)}}
         />
         <TotalPrice
           income={totalIncome}
