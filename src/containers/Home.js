@@ -32,7 +32,20 @@ const items = [
       "type": "outcome",
       "iconName": "ios-plane"
     }
+  },
+  {
+    "id": 3,
+    "title": "工资",
+    "price": 500,
+    "date": "2018-09-10",
+    "category": {
+    "id": 1,
+    "name": "旅行",
+      "type": "income",
+      "iconName": "ios-plane"
+    }
   }
+
 ]
 class Home extends Component {
   render() {
@@ -71,6 +84,11 @@ class Home extends Component {
             onTabChange={() => {}}
           />
           <CreateBtn onClick={() => {}} />
+          <PriceList
+            items={items}
+            onModifyItem={() => {}}
+            onDeleteItem={() => {}}
+          />
         </div>
       </React.Fragment>
     )
